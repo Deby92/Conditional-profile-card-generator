@@ -31,13 +31,26 @@ function render(variables = {}) {
 
   let name = "Lucy";
   if (variables.name !== null) name = variables.name;
+
+  let lastname = "Boilett";
+  if (variables.lastname !== null) lastname = variables.lastname;
+
+  let role = "Developer";
+  if (variables.role !== null) role = variables.role;
+
+  let city = "Miami";
+  if (variables.city !== null) city = variables.city;
+
+  let country = "USA";
+  if (variables.country !== null) country = variables.country;
+
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${name} Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h1> ${name} ${lastname}</h1>
+          <h2> ${role}</h2>
+          <h3> ${city}, ${country}</h3>
           <ul class="position-right">
             <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
