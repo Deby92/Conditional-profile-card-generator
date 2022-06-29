@@ -44,6 +44,9 @@ function render(variables = {}) {
   let country = "USA";
   if (variables.country !== null) country = variables.country;
 
+  let twitter = "@Adele";
+  if (variables.twitter !== null) twitter = variables.twitter;
+
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
@@ -52,10 +55,10 @@ function render(variables = {}) {
           <h2> ${role}</h2>
           <h3> ${city}, ${country}</h3>
           <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/Adele"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/Deby92"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/debora-cantuarias-urrutia"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/Devy_rulos"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -73,7 +76,7 @@ window.onload = function() {
     // this is the url for the profile avatar
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
     // social media bar position (left or right)
-    socialMediaPosition: "position-left",
+    socialMediaPosition: "position-left, position-right",
     // social media usernames
     twitter: null,
     github: "alesanchezr",
